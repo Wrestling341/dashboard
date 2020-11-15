@@ -1,0 +1,78 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 273px;
+    height: 229px;
+    border-top: 1px solid $line-blocks;
+    border-right: 1px solid $line-blocks;
+    background-color: $main-contentcolor;
+
+    &__title {
+        @include heading-title;
+        padding-bottom: 29px;
+    }
+
+    &__social-icons-list {
+        display: flex;
+        justify-content: space-between;     
+        flex-wrap: wrap;
+        width: 192px;
+
+        .social-icons__list-item--orios {
+            margin-bottom: 16px;
+            padding: 16px 11px 14px 13px;
+            width: 55px;
+            height: 55px;
+            list-style-type: none;
+            background: linear-gradient(to top left ,#6B5EB4,#B879E2);
+            border-radius: 20%;
+        } 
+    
+        .social-icons__list-item--emmi {
+            padding: 17px 14px 14px 15px;
+            width: 55px;
+            height: 55px;
+            list-style-type: none;
+            background: linear-gradient(to top left ,#4CBDC3,#58E6C7);
+            border-radius: 20%;
+        } 
+        
+        .social-icons__list-item--deviantart {
+            padding: 15px 18px 13px 20px;
+            width: 55px;
+            height: 55px;
+            list-style-type: none;
+            background: linear-gradient(to top left ,#B27079,#F3B89A);
+            border-radius: 20%;
+        } 
+    
+        .social-icons__list-item--xing {
+            padding: 16px 15px 13px 16px;
+            width: 55px;
+            height: 55px;
+            list-style-type: none;
+            background: linear-gradient(to top left ,#8A4DB5,#798EE4);
+            border-radius: 20%;
+        } 
+    
+        .social-icons__list-item--vimeo {
+            padding: 19px 15px 14px 14px;
+            width: 55px;
+            height: 55px;
+            list-style-type: none; 
+            background: linear-gradient(to top left ,#558DE7,#5BD6E2); 
+            border-radius: 20%;
+        } 
+    
+        .social-icons__list-item--vk {
+            padding: 21px 13px 16px 12px;
+            width: 55px;
+            height: 55px;
+            list-style-type: none;
+            background: linear-gradient(to top left ,#F59283,#FBD68A);
+            border-radius: 20%;
+        } 
+    }
+}
