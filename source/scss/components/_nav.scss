@@ -7,7 +7,7 @@
   
     .nav__btn {
       width: 65px;
-      background: url(./source/img/nav/btn.png) no-repeat center;
+      background: url(./img/nav/btn.png) no-repeat center;
       border-right: 1px solid $line-blocks; 
       cursor: pointer;
     }
@@ -15,7 +15,7 @@
     .nav__btn-files {
       width: 59px;
       height: 71px;
-      background: url(../img/nav/files.png) no-repeat center;
+      background: url(./img/nav/files.png) no-repeat center;
       border-right: 1px solid $line-blocks; 
       cursor: pointer;
     }
@@ -23,7 +23,7 @@
     .nav__btn-settings {
       width: 59px;
       height: 71px;
-      background: url(../img/nav/settings.png) no-repeat center;
+      background: url(./img/nav/settings.png) no-repeat center;
       border-right: 1px solid $line-blocks; 
       cursor: pointer;
     }
@@ -31,7 +31,7 @@
     .nav__btn-send {
       width: 59px;
       height: 71px;
-      background: url(../img/nav/send.png) no-repeat center;
+      background: url(./img/nav/send.png) no-repeat center;
       border-right: 1px solid $line-blocks; 
       cursor: pointer;
     }
