@@ -536,4 +536,95 @@ textarea {
   height: 18px;
   background: url(../img/nav/profile-settings.png) no-repeat center;
 }
+
+.sidebar {
+  position: fixed;
+  width: 74px;
+  height: 1020px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fc896e), to(#fd5f80));
+  background: linear-gradient(#fc896e, #fd5f80);
+}
+
+.sidebar__logo {
+  padding-top: 20px;
+  height: 70px;
+  text-align: center;
+  background-color: white;
+  -webkit-box-shadow: 5px 0px 15px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 5px 0px 15px 2px rgba(34, 60, 80, 0.2);
+}
+
+.sidebar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar .list__item {
+  padding-top: 20px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.sidebar .list__item:hover::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  margin-top: 17px;
+  margin-left: 73px;
+  border-style: solid;
+  border-width: 10px 0 10px 6px;
+  border-color: transparent transparent transparent #fc896e;
+}
+
+.sidebar .item__img--home {
+  margin-left: 26px;
+  height: 20px;
+  background: url(../img/sidebar/home.png) no-repeat;
+}
+
+.sidebar .item__img--statics {
+  margin-left: 26px;
+  height: 20px;
+  background: url(../img/sidebar/chart-bar.png) no-repeat;
+}
+
+.sidebar .item__img--users {
+  margin-left: 28px;
+  height: 20px;
+  background: url(../img/sidebar/users.png) no-repeat;
+}
+
+.sidebar .item__img--settings {
+  margin-left: 26px;
+  height: 20px;
+  background: url(../img/sidebar/setting.png) no-repeat;
+}
+
+.sidebar .item__img--quires {
+  margin-left: 26px;
+  height: 20px;
+  background: url(../img/sidebar/information.png) no-repeat;
+}
+
+.sidebar .item__img--exit {
+  margin: 330px 0px 0px 26px;
+  height: 20px;
+  background: url(../img/sidebar/exit.png) no-repeat;
+  cursor: pointer;
+}
+
+.sidebar .item__description {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Lato';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #FFFFFF;
+}
 /*# sourceMappingURL=main.css.map */

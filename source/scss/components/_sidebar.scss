@@ -1,0 +1,85 @@
+.sidebar {
+    position: fixed;
+    width: 74px;
+    height: 1020px;
+    background: linear-gradient(rgba(252,137,110,1), rgba(253,95,128,1)); 
+
+    &__logo {
+        padding-top: 20px;
+        height: 70px;
+        text-align: center;
+        background-color: white;
+        -webkit-box-shadow: 5px 0px 15px 2px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 5px 0px 15px 2px rgba(34, 60, 80, 0.2);
+        box-shadow: 5px 0px 15px 2px rgba(34, 60, 80, 0.2);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list__item {
+        padding-top: 20px;
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .list__item:hover::before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        margin-top: 17px;
+        margin-left: 73px;
+        border-style: solid;
+        border-width: 10px 0 10px 6px;
+        border-color: transparent transparent transparent (#fc896e);
+    }
+     
+    .item__img--home {
+        margin-left: 26px;
+        height: 20px;
+        background: url(../img/sidebar/home.png) no-repeat;
+    }
+
+    .item__img--statics {
+        margin-left: 26px;
+        height: 20px;
+        background: url(../img/sidebar/chart-bar.png) no-repeat;
+    }
+
+    .item__img--users {
+        margin-left: 28px;
+        height: 20px;
+        background: url(../img/sidebar/users.png) no-repeat;
+    }
+
+    .item__img--settings {
+        margin-left: 26px;
+        height: 20px;
+        background: url(../img/sidebar/setting.png) no-repeat;
+    }
+
+    .item__img--quires {
+        margin-left: 26px;
+        height: 20px;
+        background: url(../img/sidebar/information.png) no-repeat;
+    }
+
+    .item__img--exit {
+        margin: 330px 0px 0px 26px;
+        height: 20px;
+        background: url(../img/sidebar/exit.png) no-repeat;
+        cursor: pointer;
+    }
+
+    .item__description {
+        text-align: center;
+        margin-top: 10px;
+        font-family: 'Lato';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: $sidebar-description;
+    }
+}
