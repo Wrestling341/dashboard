@@ -1354,4 +1354,177 @@ textarea {
   border-width: 5.2px 3px 0 3px;
   border-color: #FD5670 transparent transparent transparent;
 }
+
+.aside__content {
+  width: 273px;
+  height: 612px;
+  background-color: #FFFFFF;
+}
+
+.aside__content .aside__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 273px;
+  height: 48px;
+  list-style-type: none;
+  background: -webkit-gradient(linear, left top, right top, from(#fd5f80), to(#fc896e));
+  background: linear-gradient(90deg, #fd5f80 0%, #fc896e 100%);
+}
+
+.aside__content .button__users {
+  position: relative;
+  width: 91px;
+  height: 48px;
+  background: url(../img/aside/users.png) no-repeat center;
+  cursor: pointer;
+}
+
+.aside__content .button__users:hover::before {
+  content: '';
+  position: absolute;
+  top: 48px;
+  left: 45.5px;
+  border-style: solid;
+  border-width: 6.4px 6px 0 6px;
+  border-color: #C54556 transparent transparent transparent;
+}
+
+.aside__content .button__chat {
+  position: relative;
+  width: 91px;
+  height: 48px;
+  background: url(../img/aside/chat.png) no-repeat center;
+  cursor: pointer;
+}
+
+.aside__content .button__chat:hover::before {
+  content: '';
+  position: absolute;
+  top: 48px;
+  left: 45.5px;
+  border-style: solid;
+  border-width: 6.4px 6px 0 6px;
+  border-color: #C54556 transparent transparent transparent;
+}
+
+.aside__content .button__like {
+  position: relative;
+  width: 91px;
+  height: 48px;
+  background: url(../img/aside/like.png) no-repeat center;
+  cursor: pointer;
+}
+
+.aside__content .button__like:hover::before {
+  content: '';
+  position: absolute;
+  top: 48px;
+  left: 45.5px;
+  border-style: solid;
+  border-width: 6.4px 6px 0 6px;
+  border-color: #C54556 transparent transparent transparent;
+}
+
+.aside__content .friends__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 273px;
+  height: 86px;
+  cursor: pointer;
+  border-bottom: 1px solid #F1F1F1;
+  border-right: 1px solid #F1F1F1;
+}
+
+.aside__content .friends__image {
+  margin-left: 20px;
+  width: 43px;
+  height: 43px;
+}
+
+.aside__content .friends_scroll {
+  width: 6px;
+  height: 114px;
+  color: #F1F1F1;
+}
+
+.aside__content .friends__item__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Lato';
+  border-right: 1px solid #F1F1F1;
+}
+
+.aside__content .item__search input {
+  margin: 17px 18px;
+  width: 149px;
+  font-size: 10px;
+  font-weight: 400;
+  list-style-type: none;
+  color: #C0C0C0;
+  background-color: #FCFCFC;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #F1F1F1;
+  outline: none;
+  opacity: 1;
+}
+
+.aside__content .item__search__btn-search {
+  margin-top: 15px;
+  margin-right: 20px;
+  width: 19px;
+  height: 19px;
+  background: url(../img/aside/aside-search.png);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.aside__content .item__search__btn-edit {
+  width: 19px;
+  height: 19px;
+  background: url(../img/aside/edit.png);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.aside__content .item__title {
+  font-family: "Lato";
+  font-size: 14px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  color: #777777;
+  margin-left: 16px;
+  width: 116px;
+}
+
+.aside__content .item__description {
+  margin-left: 16px;
+  font-family: 'Lato';
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+  color: #BFBFBF;
+}
+
+.aside__content .item_image {
+  width: 91px;
+  height: 48px;
+  background: url(../img/aside/gray-chat.png) no-repeat center;
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
