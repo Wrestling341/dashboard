@@ -1,0 +1,14 @@
+// Config
+
+@import'./config/reset';
+@import './config/variables';
+@import './config/mixins';
+
+// Components
+@import './components/baseLayout';
+@import './components/nav';
+@import './components/header';
+@import './components/sidebar';
+@import './components/main-content';
+@import './components/aside';
+@import './components/footer';
