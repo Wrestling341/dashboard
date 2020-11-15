@@ -1,0 +1,132 @@
+.nav {
+    display: flex;
+    margin-left: 76px;
+    width: 1289px;
+    height: 71px;
+    background-color: white;
+  
+    .nav__btn {
+      width: 65px;
+      background: url(../img/nav/btn.png) no-repeat center;
+      border-right: 1px solid $line-blocks; 
+      cursor: pointer;
+    }
+  
+    .nav__btn-files {
+      width: 59px;
+      height: 71px;
+      background: url(../img/nav/files.png) no-repeat center;
+      border-right: 1px solid $line-blocks; 
+      cursor: pointer;
+    }
+  
+    .nav__btn-settings {
+      width: 59px;
+      height: 71px;
+      background: url(../img/nav/settings.png) no-repeat center;
+      border-right: 1px solid $line-blocks; 
+      cursor: pointer;
+    }
+  
+    .nav__btn-send {
+      width: 59px;
+      height: 71px;
+      background: url(../img/nav/send.png) no-repeat center;
+      border-right: 1px solid $line-blocks; 
+      cursor: pointer;
+    }
+  
+    .nav__btn-message {
+      width: 59px;
+      height: 71px;
+      background: url(../img/nav/message.png) no-repeat center;
+      border-right: 1px solid $line-blocks; 
+      cursor: pointer;
+    }
+  
+    .nav__btn-internet {
+      width: 59px;
+      height: 71px;
+      background: url(../img/nav/internet.png) no-repeat center;
+      border-right: 1px solid $line-blocks; 
+      cursor: pointer;
+    }
+  
+    .nav__search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 673px;
+      border-right: 1px solid $line-blocks; 
+    }
+  
+    .search__btn {
+      width: 16px;
+      height: 16px;
+      background: url(../img/nav/nav-search.png) no-repeat center;   
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  
+    .nav__search input {
+      padding-left: 15px;
+      width: 299px;
+      height: 42px;
+      font-family: 'Lato';
+      font-size: 12px;
+      font-weight: 400;
+      border-radius: 42px;
+      border: 1px solid #F4F4F4;
+      background-color: $backgroundcolor;
+      color:#C8C8C8;
+      outline: none;
+      opacity: 1;
+  
+      .nav__search input:focus {
+        width: 300px;
+      }
+  
+      .nav__search button {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  
+    .nav__profile {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+  
+    .profile__name {
+      @include gradientcolor-text;
+      margin: 22px 0px 0px 17px;
+      font-family: 'Lato';
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      opacity: 1;
+    }
+    
+    .profile__desc {
+      margin-left: 17px;
+      margin-bottom: 21px;
+      font-family: 'Lato';
+      font-size: 10px;
+      font-weight: 400;
+      font-style: normal;
+      color: #BFBFBF;
+    }
+  
+    .profile__settings {
+      margin-top: 25px;
+      margin-left: 49px;
+      width: 5px;
+      height: 18px;
+      background: url(../img/nav/profile-settings.png) no-repeat center;
+     
+    }
+  }
