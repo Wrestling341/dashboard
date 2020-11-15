@@ -1,0 +1,41 @@
+@mixin heading-title {
+    font-family: "Lato";
+    font-size: 14px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    color: $heading-title-color;
+}
+
+@mixin revenuebtn-text-hover {
+    font-family: 'Lato';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    color: $revenue-text-btncolor;
+    opacity: 1;
+}
+
+@mixin revenuebtn-text {
+    font-family: 'Lato';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    color: $revenue-btncolor;
+    opacity: 1;
+}
+
+@mixin gradientcolor-text {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #fd5f80, #FD7858);
+}
+
+@mixin blocks-description {
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 700;
+    color: $header-description;
+    opacity: 1;
+}
