@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px) {
+    /* specific CSS  */
+    
+    .sidebar {
+        visibility: hidden;
+    }
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .main-content_revenue-pour {
+        margin-top: 20px;
+        margin-left: 55px;
+    }
+
+    .main-content__revenue-customers {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        margin: 0;   
+    }
+
+    .header {
+        margin: 0;
+        overflow-x: scroll;
+    }
+
+    .header__list {
+        margin: 0;
+    }
+
+    .nav__search {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .revenue-customers__content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .revenue-progress__img-graph {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+} 
