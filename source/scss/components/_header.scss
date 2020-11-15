@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    margin-left: 65px;
+    width: 1300px;
+    background-color: $headercolor;
+    border-top: 1px solid $line-blocks; 
+
+    .header__list {
+        display: flex;
+    }
+
+    .list__item {
+        padding: 20px 0px 22px 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .list__item__title {
+        padding-bottom: 9px;
+        font-family: $font-familyLoto;
+        font-size: 14px;
+        text-align: left;
+        font-style: normal;
+        font-weight: 700;  
+        color: $list-item-title-color;
+    }
+
+    .list__item__price {
+        padding-bottom: 8px;
+        font-family: $font-familyLoto;
+        font-size: 20px;
+        text-align: left;
+        font-style: normal;
+        font-weight: 700; 
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to right,#fd5f80, #FD7858);  
+    }
+
+    .list__item__statics {
+        width: 88px;
+        padding-top: 30px;
+        font-family: $font-familyLoto;
+        font-size: 15px;
+        text-align: left;
+        font-style: normal;
+        font-weight: 700;  
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to right,#fd5f80, #FD7858);  
+    }
+
+    .list__item__description {
+        margin-left: 10px;
+    }
+
+    .list__item__description--purple {
+        @include blocks-description;
+        position: relative;   
+    }
+
+    .list__item__description--pink {
+        @include blocks-description;
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .list__item__description--purple::before {
+        position: absolute;
+        top: 6px;
+        right: 30px;
+        content: ''; 
+        border-style: solid;
+        border-width: 0 3px 5.5px 3px;
+        border-color: transparent transparent #A889E9 transparent;
+    }
+
+    .list__item__description--pink::before {
+        position: absolute;
+        top: 4px;
+        right: 29px;
+        content: ''; 
+        border-style: solid;
+        border-width: 5.2px 3px 0 3px;
+        border-color: #FD5670 transparent transparent transparent;
+    }
+}

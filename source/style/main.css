@@ -537,6 +537,118 @@ textarea {
   background: url(../img/nav/profile-settings.png) no-repeat center;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 65px;
+  width: 1300px;
+  background-color: #FFFFFF;
+  border-top: 1px solid #F1F1F1;
+}
+
+.header .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .list__item {
+  padding: 20px 0px 22px 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .list__item__title {
+  padding-bottom: 9px;
+  font-family: "Lato";
+  font-size: 14px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  color: #777777;
+}
+
+.header .list__item__price {
+  padding-bottom: 8px;
+  font-family: "Lato";
+  font-size: 20px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fd5f80), to(#FD7858));
+  background-image: linear-gradient(to right, #fd5f80, #FD7858);
+}
+
+.header .list__item__statics {
+  width: 88px;
+  padding-top: 30px;
+  font-family: "Lato";
+  font-size: 15px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fd5f80), to(#FD7858));
+  background-image: linear-gradient(to right, #fd5f80, #FD7858);
+}
+
+.header .list__item__description {
+  margin-left: 10px;
+}
+
+.header .list__item__description--purple {
+  font-family: 'Lato';
+  font-size: 12px;
+  font-weight: 700;
+  color: #BFBFBF;
+  opacity: 1;
+  position: relative;
+}
+
+.header .list__item__description--pink {
+  font-family: 'Lato';
+  font-size: 12px;
+  font-weight: 700;
+  color: #BFBFBF;
+  opacity: 1;
+  position: relative;
+  margin-left: 10px;
+}
+
+.header .list__item__description--purple::before {
+  position: absolute;
+  top: 6px;
+  right: 30px;
+  content: '';
+  border-style: solid;
+  border-width: 0 3px 5.5px 3px;
+  border-color: transparent transparent #A889E9 transparent;
+}
+
+.header .list__item__description--pink::before {
+  position: absolute;
+  top: 4px;
+  right: 29px;
+  content: '';
+  border-style: solid;
+  border-width: 5.2px 3px 0 3px;
+  border-color: #FD5670 transparent transparent transparent;
+}
+
 .sidebar {
   position: fixed;
   width: 74px;
