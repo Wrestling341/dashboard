@@ -774,7 +774,7 @@ textarea {
 .main-content__revenue-progress .revenue-progress__img-graph {
   margin: 31px 0px 0px 31px;
   height: 180px;
-  background: url(../source/img/main/graph.png) no-repeat;
+  background: url(./dashboard/source/img/main/graph.png) no-repeat;
 }
 
 .main-content__revenue-progress .revenue-progress__content {
