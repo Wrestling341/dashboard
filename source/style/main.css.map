@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/config/_reset.scss",
+        "../scss/config/_variables.scss",
+        "../scss/config/_mixins.scss",
+        "../scss/components/_baseLayout.scss",
+        "../scss/components/_nav.scss",
+        "../scss/components/_header.scss",
+        "../scss/components/_sidebar.scss",
+        "../scss/components/_main-content.scss",
+        "../scss/components/_aside.scss",
+        "../scss/components/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
