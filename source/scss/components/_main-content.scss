@@ -1,0 +1,488 @@
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 19px 0px 0px 88px;
+    width: 990px;
+    height: 795px;
+    background-color: $main-backgroundcolor;
+
+    &__revenue-progress {
+        width: 704px;
+        height: 266px;
+        background-color: $main-contentcolor;
+
+        .revenue-progress__title {
+            margin-right: 290px;
+            @include heading-title;
+        }
+
+        .revenue-progress__img-graph {
+            margin: 31px 0px 0px 31px;
+            height: 180px;
+            background: url(../img/main/graph.png) no-repeat;
+        }
+
+        .revenue-progress__content {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 31px;
+        }
+
+        .revenue-progress__btn {
+            @include revenuebtn-text;
+            margin-top: 11px;
+            width: 50px;
+            background: none;
+            border: none;
+            color: $revenue-btncolor;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .revenue-progress__btn:hover {
+            @include revenuebtn-text-hover;
+            width: 68px;
+            height: 25px;
+            border-radius: 35%;
+            background-image: linear-gradient(to right, #fd5f80, #FD7858);
+        }
+
+        .revenue-progress__content-btns {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 60px;
+            width: 150px;
+        }
+
+        .revenue-progress__vertical-btn {
+            margin-top: 10px;
+            margin-left: 22px;
+            width: 6px;
+            height: 18px;
+            background: url(../img/main/vertical-btn.png) no-repeat;
+            border: none;
+            outline: none;
+        }
+    }
+
+    &__revenue-pour {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 264px;
+        height: 266px;
+        background-color: $main-contentcolor;
+
+        .revenue-pour__title {
+            padding-top: 31px;
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: 700;
+            color: #777777;
+            opacity: 1;
+        }
+
+        .revenue-por__progress-bar {
+            width: 140px;
+            height: 145px;
+            background: url(../img/main/progress-bar.png) no-repeat;
+        }
+
+        .revenue-pour__description {
+            margin-bottom: 30px;
+        }
+
+        .revenue-pour__description--triangle-purple {
+            position: relative;
+            @include blocks-description;
+
+        }
+
+        .revenue-pour__description--triangle-pink {
+            position: relative;
+            @include blocks-description;
+            margin-left: 10px;
+        }
+
+        .revenue-pour__description--triangle-purple::before {
+            position: absolute;
+            top: 6px;
+            right: 30px;
+            content: ''; 
+            border-style: solid;
+            border-width: 0 3px 5.5px 3px;
+            border-color: transparent transparent #A889E9 transparent;
+        }
+
+        .revenue-pour__description--triangle-pink::before {
+            position: absolute;
+            top: 4px;
+            right: 30px;
+            content: ''; 
+            border-style: solid;
+            border-width: 5.5px 3px 0 3px;
+            border-color: #FD5670 transparent transparent transparent;
+        }
+    }
+
+    &__revenue-customers {
+        margin-top: 20px;
+        width: 467px;
+        height: 508px;
+        background-color: $main-contentcolor;
+
+        .revenue-customers__title {
+            @include heading-title;
+            margin-top: 31px;
+            margin-left: 30px;
+            margin-bottom: 39px;
+        }
+
+        .revenue-customers__message-sophia {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-left: 29px;
+            width: 408px;
+            height: 84px;
+
+            .revenue-customers__message__description {
+                margin-top: 13px;
+                font-family: 'Lato';
+                font-size: 8px;
+                text-align: left;
+                font-style: normal;
+                font-weight: 400;
+                color: #979796;
+            }
+
+            blockquote {
+                padding: 21px 21px 18px 24px;
+                margin-left: 20px;
+                width: 348px;
+                height: 84px;
+                font-family: 'Lato';
+                font-size: 12px;
+                text-align: left;  
+                font-style: normal;
+                font-weight: 400;
+                color: #777777;
+                border: 1px solid #F1F1F1;
+                background-color: $backgroundblockquote-color;
+            }
+        }
+
+        .revenue-customers__scroll-message {
+            display: flex;
+            margin-top: 19px;
+            margin-left: 100px;
+            width: 335px;
+            height: 206px;
+
+            .scroll-message__line {
+                width: 4px;
+                height: 187px;
+                background-color: #F1F1F1;
+            }
+
+            .scroll-message__blockquote {
+                padding: 21px 21px 18px 20px;
+                margin-left: 16px;
+                margin-bottom: 19px;
+                width: 321px;
+                height: 84px;
+                font-family: 'Lato';
+                font-size: 12px;
+                text-align: left;  
+                font-style: normal;
+                font-weight: 400;
+                color: #777777;
+                border: 1px solid #F1F1F1;
+                background-color: $backgroundblockquote-color;
+            }
+
+        }
+
+        .scroll-message__quote {
+            display: flex;
+            flex-direction: column;
+            width: 316px;
+        }
+
+        .scroll-message__name {
+            font-weight: 900;
+        }
+
+        .revenue-customers__message-peter {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 19px;
+            margin-left: 29px;
+            width: 408px;
+            height: 84px;
+
+            .message__sophia__description {
+                margin-top: 13px;
+                font-family: 'Lato';
+                font-size: 8px;
+                text-align: left;
+                font-style: normal;
+                font-weight: 400;
+                color: #979796;
+            }
+
+            blockquote {
+                padding: 21px 21px 18px 24px;
+                margin-left: 20px;
+                width: 348px;
+                height: 84px;
+                font-family: 'Lato';
+                font-size: 12px;
+                text-align: left;  
+                font-style: normal;
+                font-weight: 400;
+                color: #777777;
+                border: 1px solid #F1F1F1;
+                background-color: $backgroundblockquote-color;
+            }
+        }
+    }
+
+    &__todays {
+        margin-top: 20px;
+        width: 501px;
+        height: 245px;
+        background: #FFFFFF;
+        overflow-y: scroll;
+        
+        .todays__title {
+            padding: 32px 0px 0px 31px;
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: 700;
+            text-align: left;
+            color: $list-item-title-color;
+            opacity: 1;
+        }
+
+        .todays__list {
+            padding: 35px 0px 0px 31px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 440px;
+            display: flex;
+            list-style-type: none;
+        }
+
+        .todays__item {
+            display: flex;
+            align-items: center;
+            margin-top: 2px;
+            height: 37px;
+            border-top: 1px solid $todays-linecolor;
+        }
+
+        .todays__subtitle {
+            margin-left: 11px;
+            width: 51px;
+            font-family: 'Lato';
+            font-size: 12px;
+            font-weight: 900;
+            text-align: left;
+            color: $todays-subtitlecolor;
+            opacity: 1;
+        }
+
+        .todays__text {
+            margin-left: 31px;
+            width: 214px;
+            font-family: 'Lato';
+            font-size: 12px;
+            font-weight: 400;
+            text-align: left;
+            color: $todays-text;
+            opacity: 1;
+        }
+
+        .todys__img {
+            margin-left: 35px;
+            width: 12px;
+            height: 12px;
+            background: url(../img/main/time.png) no-repeat;
+        }
+
+        .todays__time {
+            width: 54px;
+            margin-left: 9px;
+            font-family: 'Lato';
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $todays-time;
+            opacity: 1;
+        }
+    }
+
+    .inner-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 18px;
+
+        .inner-container__progress {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 241px;
+            height: 245px;
+            background-color: $main-contentcolor;
+
+            .progress__description {
+                margin-bottom: 23px;
+            }
+    
+            .progress__description--purple {
+                position: relative;
+                @include blocks-description;
+            }
+    
+            .progress__description--pink {
+                @include blocks-description;
+                position: relative;
+                margin-left: 10px;
+            }
+    
+            .progress__description--purple::before {
+                position: absolute;
+                top: 7px;
+                right: 30px;
+                content: ''; 
+                border-style: solid;
+                border-width: 0 3px 5.5px 3px;
+                border-color: transparent transparent #A889E9 transparent;
+            }
+    
+            .progress__description--pink::before {
+                position: absolute;
+                right: 30px;
+                top: 4px;
+                content: ''; 
+                border-style: solid;
+                border-width: 5.2px 3px 0 3px;
+                border-color: #FD5670 transparent transparent transparent;
+            }
+        }
+    
+       
+
+        .progress__img {
+            width: 170px;
+            height: 105px;
+            background: url(../img/main/vertical-progress.png) no-repeat;
+        }
+
+        .progress__title {
+            @include heading-title;
+            margin-top: 31px;
+        }
+
+        .progress__price {
+            font-family: 'Lato';
+            font-size: 20px; 
+            font-weight: 900;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-image: linear-gradient(to right, #708AE6, #8841AF);
+            opacity: 1;
+        }
+
+        .inner__container__progress-description {
+            padding-bottom: 23px;
+            font-family: 'Lato';
+            font-size: 12px;
+            font-weight: 700;
+            color: $inner-container-descriptioncolor;
+            opacity: 1;
+        }
+
+        .inner-container__shipments { 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 241px;
+            height: 245px;
+            background-color: $main-contentcolor;    
+
+            .inner-container__shipments__title {
+                @include heading-title;
+                margin-top: 31px;
+            }
+
+            .inner-container__shipments__img {
+                width: 170px;
+                height: 105px;
+                background: url(../img/main/map.png) no-repeat;
+            }
+
+            .inner-container__body-shepments {
+                display: flex;
+            }
+
+            .inner-container__shipments-price {
+                margin-right: 44px;
+                margin-bottom: 24px;
+                font-family: 'Lato';
+                font-size: 20px; 
+                text-align: left;
+                font-weight: 900;
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-image: linear-gradient(to right, #fd5f80, #FD7858);
+                opacity: 1;
+            }
+
+            .inner__container__shipments-description {
+                padding-top: 4px;
+            }
+
+            .inner__container__shipments-description--purple {
+                @include blocks-description;
+                position: relative;        
+            }
+
+            .inner__container__shipments-description--pink {
+                @include blocks-description;
+                position: relative;
+                margin-left: 10px;
+            }
+
+            .inner__container__shipments-description--purple::before {
+                position: absolute;
+                top: 7px;
+                right: 30px;
+                content: ''; 
+                border-style: solid;
+                border-width: 0 3px 5.5px 3px;
+                border-color: transparent transparent #A889E9 transparent;
+            }
+
+            .inner__container__shipments-description--pink:before {
+                position: absolute;
+                right: 30px;
+                top: 4px;
+                content: ''; 
+                border-style: solid;
+                border-width: 5.2px 3px 0 3px;
+                border-color: #FD5670 transparent transparent transparent;
+            }
+
+        }
+    }
+}
