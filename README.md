@@ -1,1 +1,1 @@
-https://wrestling341.github.io/dashboard/
+https://sentinelli.github.io/dashboard/
